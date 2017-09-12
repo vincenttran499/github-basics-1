@@ -14,7 +14,12 @@
     </head>
     <body>
     <header>
-	<h1>Page title</h1>
+	<h1>My favorite Ice Creams</h1>
+  <ol>
+    <li>Taro</li>
+    <li>Thai Tea</li>
+    <li>Vietnamese Coffee</li>
+  </ol>
     </header>
     <nav id="pageNav">
     </nav>
@@ -26,20 +31,20 @@
 //use the modernizr load to load up external scripts. This will load the scripts asynchronously, but the order listed matters. Although it will load all scripts in parallel, it will execute them in the order listed
 Modernizr.load([
 {
-    load: [  
+    load: [
 		//for local testing, for distribution remove the protocol and let Google resolve
         'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
-		'_scripts/scripts.js' 
-		//additional scripts can be loaded here, separate with a comma in the order you wish them to execute 
+		'_scripts/scripts.js'
+		//additional scripts can be loaded here, separate with a comma in the order you wish them to execute
     ]
 },
 {
 	// test for media query support, if not load respond.js
     test : Modernizr.mq('only all'),
     // If not, load the respond.js file
-    nope : 'js/respond.min.js' 
+    nope : 'js/respond.min.js'
 }
-]); 
+]);
 </script>
     </body>
 </html>
